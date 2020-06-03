@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>[Summitworks] Javascript Assignment Answer 6</title>
+    </head>
+    <body></body>
+</html>
+
+<script>
+    //Write a Javascript program to get the difference between a given number and 13, if the number is greater than 13 return double the absolute difference.
+
+    let diff;
+    function difference(number) {
+        if (number <= 13) {
+            diff = 13 - number;
+        } else {
+            diff = (number - 13) * 2;
+        }
+        document.write(
+            '<h1>THE DIFFERENCE BETWEEN NUMBER ' +
+                number +
+                ' AND 13 IS ' +
+                diff +
+                '</h1>'
+        );
+    }
+
+    difference(32);
+    difference(11);
+</script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>[Summitworks] Javascript Assignment Answer 3</title>
+    </head>
+    <body></body>
+</html>
+
+<script>
+    //3. Find out how old you would be? Calculate it.
+    //Store your birthdate in a variable
+    let birthDay = '06-06-1999';
+
+    //Store future year in a variable
+    let futureYear = '07-06-2026';
+
+    // Calculate your two possible ages for that year based on the stored values.
+    function getFutureAge(birthDate, futureDate) {
+        let birthDateObj = new Date(birthDate);
+        let futureDateObj = new Date(futureDate);
+        let ageInYears =
+            futureDateObj.getFullYear() - birthDateObj.getFullYear();
+        let possibleAgeInYears = ageInYears - 1;
+        document.write(
+            'I WILL BE EITHER ' +
+                possibleAgeInYears +
+                ' OR ' +
+                ageInYears +
+                ' IN 2026'
+        );
+    }
+
+    getFutureAge(birthDay, futureYear);
+</script>

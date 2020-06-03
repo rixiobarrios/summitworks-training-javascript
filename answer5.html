@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>[Summitworks] Javascript Assignment Answer 5</title>
+    </head>
+    <body></body>
+</html>
+
+<script>
+    //Write a Javascript porgram to convert temperatures to and from Celcius, Farenheit
+    //Formula: c/5 = (f-32)/9 (where c = temperature in Celsius amd f = temperature in Fahrenheit)
+    //Expected Output:
+    //60°C is 140 °F
+    //45°F is 7.222222222222222°C
+
+    function cToF(celsius) {
+        let cTemp = celsius;
+        let cToFahr = (cTemp * 9) / 5 + 32;
+        document.write(cTemp + '°C is ' + cToFahr + ' °F<br>');
+    }
+    cToF(60);
+
+    function fToC(Fahrenheit) {
+        let fTemp = Fahrenheit;
+        let fToCel = ((fTemp - 32) * 5) / 9;
+        document.write(fTemp + '°F IS ' + fToCel + ' °C');
+    }
+    fToC(45);
+</script>

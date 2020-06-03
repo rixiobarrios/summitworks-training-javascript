@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>[Summitworks] Javascript Assignment Answer 1</title>
+    </head>
+    <body>
+        <center>
+            <h1 id="getName"></h1>
+            <h1 id="soccer"></h1>
+        </center>
+    </body>
+</html>
+<script>
+    //1. Create an HTML page that perform the following operation:
+    // Welcomes the user to the page using alert
+    alert('WELCOME USER!');
+
+    // Ask the User to enter his/her name using prompt
+    let name = prompt('PLEASE ENTER YOUR NAME: ');
+    // console.log('Welcome ' + name);
+    document.getElementById('getName').innerHTML = 'WELCOME ' + name + '!';
+
+    //Using a Confirm, ask the user if he/she like soccer
+    if (
+        confirm(
+            'HELLO ' +
+                name +
+                '!!, DO YOU LIKE SOCCER? PRESS OK FOR YES OR CANCEL FOR NO'
+        )
+        //Display the User name and his/her interest in Soccer on the page loaded and on the console
+    ) {
+        console.log('Awesome, you are a soccer fan!');
+        document.getElementById('soccer').innerHTML =
+            'GLAD YOU ARE A SOCCER FAN!';
+    } else {
+        console.log('Sad, you are not a soccer fan');
+        document.getElementById('soccer').innerHTML =
+            'SAD, YOU ARE NOT A SOCCER FAN';
+    }
+</script>
